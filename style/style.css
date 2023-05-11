@@ -273,3 +273,38 @@ header {
     min-height: 1100px;
   }
 }
+/**************************about us*****************************************/
+.about-us-box {
+  margin-top: 80px;
+  width: 100%;
+}
+.about-us-title {
+  background-color: pink;
+  min-height: 50px;
+}
+.about-us-first-art {
+  background-color: orange;
+  min-height: 500px;
+  margin-top: 40px;
+}
+.about-us-secon-art {
+  background-color: grey;
+  min-height: 500px;
+  margin-top: 40px;
+}
+.contact-someone {
+  background-color: brown;
+  min-height: 300px;
+  margin-top: 40px;
+}
+/***********************media about us*******************************/
+@media all and (min-width: 768px) {
+  .about-us-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-someone,
+  .about-us-des {
+    width: calc((45% -30px) / 2);
+  }
+}
