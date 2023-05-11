@@ -36,7 +36,7 @@ header {
 /*****************************************media header******************************/
 @media all and (min-width: 768px) {
   .container {
-    min-width: 720px;
+    max-width: 720px;
     margin: 0 auto;
   }
 }
@@ -118,6 +118,8 @@ header {
 .strategic-box {
   margin-top: 40px;
   min-height: 1100px;
+  max-width: 440px;
+  margin: 0 auto;
 }
 .main-img {
   min-height: 500px;
@@ -126,9 +128,48 @@ header {
 .img-card {
   min-height: 400px;
   border-radius: 30px;
-  width: 300px;
   margin: auto;
   background-color: white;
   margin-top: 70px;
-  gsgdgsg
+}
+/***************************meidia strategic***************************************/
+@media all and (min-width: 768px) {
+  .img-card {
+    width: 100%;
+    text-align: center;
+  }
+  .strategic-box {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1200px) {
+  .strategic-box {
+    padding-top: 100px;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    min-height: 700px;
+  }
+  .img-card {
+    min-height: 520px;
+    padding: 0 40px;
+    margin: 0;
+  }
+  .main-img {
+    max-width: 50%;
+    min-height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-img img {
+    max-width: 80%;
+  }
+  .strategic {
+    height: 850px;
+  }
 }
