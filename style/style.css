@@ -3,30 +3,31 @@
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+}
 /************************************utilities***********************************/
 .container {
-  min-width: 440px;
+  max-width: 440px;
   margin: 0 auto;
 }
 /************************************header**************************************/
 header {
-  width: 100%;
   background-color: rgb(0, 132, 253);
   height: 80px;
-  display: flex;
-  align-items: center;
 }
 .nav {
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  align-items: center;
+  height: 100%;
 }
 .nav-links {
   display: none;
 }
 .burger,
 .logo {
-  height: 100%;
   background-color: yellow;
   flex-basis: 60px;
   display: flex;
@@ -56,20 +57,61 @@ header {
   }
 }
 /**********************************main*****************************************/
-.top-cards {
-  width: 400px;
+.top-card {
   border-radius: 30px;
-  height: 300px;
+  min-height: 300px;
   background-color: rgb(181, 221, 255);
   margin-top: 30px;
 }
-.main-card {
-  height: 500px;
+/********************************media main-cards*******************************/
+@media all and (min-width: 768px) {
+  .top-card {
+    width: 30%;
+    border-radius: 30px;
+    background-color: rgb(181, 221, 255);
+    margin-top: 30px;
+    min-height: 500px;
+  }
+  .main-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .second-row {
+    min-height: 400px;
+  }
+  .main-card {
+    width: 65%;
+  }
 }
-.main-cards {
+@media all and (min-width: 1200px) {
+  .top-card {
+    width: 32%;
+    border-radius: 30px;
+    background-color: rgb(181, 221, 255);
+    margin-top: 30px;
+    min-height: 320px;
+  }
+  .main-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-card {
+    width: 66%;
+  }
+}
+
+/********************************stategic***************************************/
+.stategic {
   max-width: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/********************************stategic***************************************/
+.main-img {
+}
+.img-card {
+}
