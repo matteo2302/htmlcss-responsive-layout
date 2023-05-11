@@ -63,6 +63,12 @@ header {
   background-color: rgb(181, 221, 255);
   margin-top: 30px;
 }
+.main-card {
+  min-height: 600px;
+}
+.main-cards {
+  margin-bottom: 80px;
+}
 /********************************media main-cards*******************************/
 @media all and (min-width: 768px) {
   .top-card {
@@ -105,13 +111,23 @@ header {
 }
 
 /********************************stategic***************************************/
-.stategic {
-  max-width: 440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.strategic {
+  background-color: rgb(151, 146, 228);
+  padding-top: 30px;
+}
+.strategic-box {
+  margin-top: 40px;
+  min-height: 1100px;
 }
 .main-img {
+  min-height: 500px;
+  background-color: yellow;
 }
 .img-card {
+  min-height: 400px;
+  border-radius: 30px;
+  width: 300px;
+  margin: auto;
+  background-color: white;
+  margin-top: 70px;
 }
