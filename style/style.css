@@ -132,7 +132,7 @@ header {
   background-color: white;
   margin-top: 70px;
 }
-/***************************meidia strategic***************************************/
+/***************************media strategic***************************************/
 @media all and (min-width: 768px) {
   .img-card {
     width: 100%;
@@ -172,4 +172,33 @@ header {
   .strategic {
     height: 850px;
   }
+}
+/***********************************testimonials***********************/
+.testimonials-box {
+  margin-top: 80px;
+}
+.testimonials-top {
+  background-color: yellow;
+  min-height: 150px;
+}
+.middle-card {
+  min-height: 600px;
+  background-color: rgb(151, 146, 228);
+  border-radius: 30px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.testimonial-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: red;
+}
+.testimonial-description {
+  background-color: yellow;
+  width: 80%;
+  min-height: 300px;
 }
