@@ -14,9 +14,13 @@ img {
   margin: 0 auto;
 }
 /************************************header**************************************/
+
 header {
   background-color: rgb(0, 132, 253);
   height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .nav {
   display: flex;
@@ -68,7 +72,7 @@ header {
   min-height: 600px;
 }
 .main-cards {
-  margin-bottom: 80px;
+  margin: 90px auto;
 }
 /********************************media main-cards*******************************/
 @media all and (min-width: 768px) {
@@ -282,29 +286,34 @@ header {
   background-color: pink;
   min-height: 50px;
 }
+.about-us-secon-art,
 .about-us-first-art {
   background-color: orange;
-  min-height: 500px;
+  min-height: 300px;
   margin-top: 40px;
 }
 .about-us-secon-art {
   background-color: grey;
-  min-height: 500px;
-  margin-top: 40px;
 }
 .contact-someone {
   background-color: brown;
   min-height: 300px;
   margin-top: 40px;
 }
+
 /***********************media about us*******************************/
 @media all and (min-width: 768px) {
   .about-us-box {
     display: flex;
     justify-content: space-between;
   }
-  .contact-someone,
+  .contact-someone-box {
+    width: 30%;
+  }
   .about-us-des {
-    width: calc((45% -30px) / 2);
+    width: 65%;
+  }
+  .contact-someone {
+    margin-top: 0;
   }
 }
